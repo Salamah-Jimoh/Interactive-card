@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="container">
+<section id="card-section">
+    <div class="background">
+       <div class="cards-desktop">
+      <div class="front-card">
+      <img src="images/card-logo.svg" class="logo" alt="Card-logo">
+      <img src="images/bg-card-front.png" alt="front-card">
+      <p  class="card-number" id="card-number">0000 0000 0000 0000</p>
+     <p class="card-name" id="card-name"> Jane Appleseed </p> <p id="card-date"class="card-date">00/00</p>
+    </div>
+      <div class="back-card">
+      <img src="images/bg-card-back.png" alt="Back-card">
+      <p class="card-cvv" id="card-cvv">  000</p>
+    </div>
+  </div><!--desktop end-->
+ <div class="card-mobile">
+    <div class="back-card-mobile">
+      <img src="images/bg-card-back.png" alt="Back-card">
+      <p class="card-cvv" id="mobile-cvv">  000</p>
+    </div>  
+  <div class="front-card-mobile">
+    <img src="images/card-logo.svg" class="logo" alt="Card-logo">
+    <img src="images/bg-card-front.png" alt="front-card">
+    <p  class="card-number" id="mobile-number">0000 0000 0000 0000</p>
+    <p class="card-name" id="mobile-name">  Jane Appleseed </p><p id="mobile-date" class="card-date">00/00</p>
+  </div>
+    </div><!--bg section ends--> 
+  </section>
+ <section id="forms">
+   <div class="form" id="my-form">
+       <form action="" >
+        <div class="form-div">
+          <label for="Cardname">Cardholder Name</label>
+          <input type="text" id="nameInput" class="form-input" placeholder="e.g. Jane Appleseed">
+          </div>
+          <div id="validate-name"></div>
+          <div class="form-div">
+            <label for="Cardnumber"> Card Number</label>
+            <input type="text" id="numberInput" class="form-input" placeholder=" e.g. 1234 5678 9123 0000">
+            </div>
+            <div id="validate-number"></div>
+            <div class="form-div">
+              <label for="expirydate">Exp. Date (MM/YY)</label>
+              <div class="small-container">
+              <input type="text" id="mm" placeholder="MM">
+              <input type="text" id="yy" placeholder="YY">
+              <label for="cvc" style="margin-top:-30px; transform:translateX(100px)">  CVC</label>
+              <input type="text" id="cvcInput" placeholder="e.g. 123">
+           </div>
+           <div id="validate-date"></div>
+            </div>
+            <div class="form-div">
+              <div id="validate-cvv" class="validate-cvv"></div>
+              <button id="confirm-btn" class="btn">Confirm</button>
+            </div>
+       </form>
+    </div>
+    </section>
+ <section id="complete">
+    <div class="complete-container">
+      <img src="images/icon-complete.svg" class="complete-logo" alt="Completed Logo">
+      <p class="bold-text">T&nbsp;h&nbsp;a&nbsp;n&nbsp;k&nbsp; y&nbsp;o&nbsp;u&nbsp;!</p>
+      <p class="light-text"> We've added your card details</p>
+      <button id="complete-btn" class="btn btn-complete">Continue</button>
+    </div>
+  </section>
+  </div><!--container div-->
+</main>
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Salamah</a>.
+  </div>
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
