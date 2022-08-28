@@ -177,7 +177,7 @@ background-color:hsl(278, 68%, 11%);
     .attribution a {
   color: hsl(228, 45%, 44%); }
 /* Media Queries */
-@media (max-width:  375px){
+@media (max-width:  764px){
   .container{
       flex-wrap:wrap;
   }
